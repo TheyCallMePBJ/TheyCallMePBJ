@@ -19,14 +19,17 @@ An end-to-end ML pipeline on synthetic parcel-delivery data: delivery-time regre
 A fixed MyAnimeList tracker for the Paperback iOS manga reader. Logins expired after ~16 days because of an endless token-refresh loop, and MAL rejected chapter syncs. Both are fixed, along with several smaller bugs. GitHub Actions builds and publishes it, and people install it from the [project page](https://theycallmepbj.github.io/paperback-mal-tracker-0.8/).
 
 **[Vesper](https://github.com/TheyCallMePBJ/vesper)** · QML, Quickshell
-A configurable status bar for Hyprland. You arrange its widgets from a settings window, and its settings file reloads live when edited. Includes 8 built-in themes plus your own, and IPC commands for keybinds.
+The desktop shell I use every day on Hyprland: a widget bar you arrange from a settings window, a control centre, network, Bluetooth and audio panels, its own notification daemon and on-screen displays. Settings reload live, with 8 built-in themes plus your own.
 
 **[FinTrack](https://github.com/TheyCallMePBJ/fintrack)** · Java, Spring Boot
 A personal finance web app. You can log transactions in plain English ("spent 500 on food yesterday"), track goals, and see spending insights and Chart.js reports. Data is stored in MariaDB through JPA/Hibernate.
 
+**[clipdeck](https://github.com/TheyCallMePBJ/clipdeck)** · Rust
+A clipboard history popup for Wayland, built on cliphist. Fuzzy search, text and image previews, pins that survive history wipes, and live reload when the history changes. It keeps no copy of the history, so it never falls out of sync with cliphist.
+
 ## Tech
 
-- **Languages:** Java, Python, TypeScript, QML, Lua, SQL
+- **Languages:** Java, Python, TypeScript, QML, Lua, SQL, Rust
 - **Backend & data:** Spring Boot, FastAPI, JPA/Hibernate, MariaDB, SQLite, pandas, scikit-learn
 - **Tools:** Linux, Git, GitHub Actions, Maven, Azure App Service
 
